@@ -24,5 +24,19 @@ namespace Probleme_BDD_AlexandraCHUVATIN_AntoineCALDICHOURY
         {
             InitializeComponent();
         }
+
+        private void Gestion_Piece_Click(object sender, RoutedEventArgs e)
+        {
+            Gestion_Piece fenetre = new Gestion_Piece();
+            fenetre.Show();
+            this.Close();
+        }
+
+        private void Gestion_Modele_Click(object sender, RoutedEventArgs e)
+        {
+            Gestion_Modele fenetre = new Gestion_Modele();
+            fenetre.Show();
+            this.Close();
+        }
     }
 }

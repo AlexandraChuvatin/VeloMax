@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Gestion Pièce" HorizontalAlignment="Left" Margin="38,38,0,0" VerticalAlignment="Top" Width="173" Click="Gestion_Piece_Click" Height="73"/>
+        <Button Content="Gestion Modèle" HorizontalAlignment="Left" Margin="38,153,0,0" VerticalAlignment="Top" Width="173" Height="73" Click="Gestion_Modele_Click"/>
+
     </Grid>
 </Window>
