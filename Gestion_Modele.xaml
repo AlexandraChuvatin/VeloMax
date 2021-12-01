@@ -1,0 +1,75 @@
+﻿<Window x:Class="Probleme_BDD_AlexandraCHUVATIN_AntoineCALDICHOURY.Gestion_Modele"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Probleme_BDD_AlexandraCHUVATIN_AntoineCALDICHOURY"
+        mc:Ignorable="d"
+        Title="Gestion_Modele" Height="450" Width="800">
+    <Grid>
+        <ListView Name="Liste1" HorizontalAlignment="Left" Height="292" Margin="10,10,0,0" VerticalAlignment="Top" Width="773" ItemsSource="{Binding ListeModele, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Numéro" Width="auto" DisplayMemberBinding="{Binding Num_modele, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Prix" Width="auto" DisplayMemberBinding="{Binding Prix_modele, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Ligne produit" Width="auto" DisplayMemberBinding="{Binding Ligne_produit, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Nom" Width="auto" DisplayMemberBinding="{Binding Nom_modele, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Grandeur" Width="auto" DisplayMemberBinding="{Binding Grandeur, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Date intro" Width="auto" DisplayMemberBinding="{Binding Date_intro_modele, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Date disc" Width="auto" DisplayMemberBinding="{Binding Date_disc_modele, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Cadre" Width="auto" DisplayMemberBinding="{Binding Cadre, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Guidon" Width="auto" DisplayMemberBinding="{Binding Guidon, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Freins" Width="auto" DisplayMemberBinding="{Binding Freins, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Selle" Width="auto" DisplayMemberBinding="{Binding Selle, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Derailleur avant" Width="auto" DisplayMemberBinding="{Binding Derailleur_avant, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Derailleur arriere" Width="auto" DisplayMemberBinding="{Binding Derailleur_arriere, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Roue avant" Width="auto" DisplayMemberBinding="{Binding Roue_avant, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Roue arriere" Width="auto" DisplayMemberBinding="{Binding Roue_arriere, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Reflecteurs" Width="auto" DisplayMemberBinding="{Binding Reflecteurs, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Pedalier" Width="auto" DisplayMemberBinding="{Binding Pedalier, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Ordinateur" Width="auto" DisplayMemberBinding="{Binding Ordinateur, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Panier" Width="auto" DisplayMemberBinding="{Binding Panier, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Stock" Width="auto" DisplayMemberBinding="{Binding Stock_modele, Mode=TwoWay}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Modifier" HorizontalAlignment="Left" Margin="11,307,0,0" VerticalAlignment="Top" Width="121" Click="Modifier" Height="36">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Supprimer" HorizontalAlignment="Left" Margin="176,307,0,0" VerticalAlignment="Top" Width="117" Click="Supprimer" Height="36">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Créer" HorizontalAlignment="Left" Margin="338,307,0,0" VerticalAlignment="Top" Width="117" Click="Creer" Height="36">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="71" Margin="699,331,0,0" VerticalAlignment="Top" Width="71" Click="Retour" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="retour2.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Export JSON" HorizontalAlignment="Left" Height="36" Margin="534,307,0,0" VerticalAlignment="Top" Width="124" Click="Export_JSON_Click" Background="#FFADC9EA">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Export XML" HorizontalAlignment="Left" Height="36" Margin="534,367,0,0" VerticalAlignment="Top" Width="124" Click="Export_XML_Click" Background="#FFADC9EA">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>

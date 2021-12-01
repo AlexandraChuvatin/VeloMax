@@ -1,0 +1,61 @@
+﻿<Window x:Class="Probleme_BDD_AlexandraCHUVATIN_AntoineCALDICHOURY.Gestion_Fournisseur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Probleme_BDD_AlexandraCHUVATIN_AntoineCALDICHOURY"
+        mc:Ignorable="d"
+        Title="Gestion_Fournisseur" Height="450" Width="800">
+    <Grid>
+        <ListView Name="Liste1" HorizontalAlignment="Left" Height="293" Margin="10,10,0,0" VerticalAlignment="Top" Width="774" ItemsSource="{Binding ListeFournisseur, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Siret" Width="auto" DisplayMemberBinding="{Binding Siret, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Nom entreprise" Width="auto" DisplayMemberBinding="{Binding Nom_entreprise, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Contact fournisseur" Width="auto" DisplayMemberBinding="{Binding Contact_fournisseur, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Adresse fournisseur" Width="auto" DisplayMemberBinding="{Binding Adresse_fournisseur, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Libellé" Width="auto" DisplayMemberBinding="{Binding Libelle, Mode=TwoWay}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Modifier" HorizontalAlignment="Left" Margin="12,308,0,0" VerticalAlignment="Top" Width="124" Click="Modifier" Height="36">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Supprimer" HorizontalAlignment="Left" Margin="172,308,0,0" VerticalAlignment="Top" Width="124" Click="Supprimer" Height="36">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Créer" HorizontalAlignment="Left" Margin="335,308,0,0" VerticalAlignment="Top" Width="124" Click="Creer" Height="36">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="71" Margin="698,330,0,0" VerticalAlignment="Top" Width="71" Click="Retour" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="retour2.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Export JSON" HorizontalAlignment="Left" Height="36" Margin="535,308,0,0" VerticalAlignment="Top" Width="124" Click="Export_JSON_Click" Background="#FFADC9EA">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Export XML" HorizontalAlignment="Left" Height="36" Margin="535,362,0,0" VerticalAlignment="Top" Width="124" Click="Export_XML_Click" Background="#FFADC9EA">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>

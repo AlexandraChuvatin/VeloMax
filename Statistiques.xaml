@@ -1,0 +1,166 @@
+﻿<Window x:Class="Probleme_BDD_AlexandraCHUVATIN_AntoineCALDICHOURY.Statistiques"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Probleme_BDD_AlexandraCHUVATIN_AntoineCALDICHOURY"
+        mc:Ignorable="d"
+        Title="Statistiques" Height="650" Width="900">
+    <Grid>
+        <Button HorizontalAlignment="Left" Height="57" Margin="816,549,0,0" VerticalAlignment="Top" Width="57" BorderBrush="{x:Null}" RenderTransformOrigin="0.5,0.5" Click="Retour">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="retour2.png"/>
+            </Button.Background>
+        </Button>
+        <ListView x:Name="Liste1" HorizontalAlignment="Left" Height="113" Margin="62,298,0,0" VerticalAlignment="Top" Width="150" ItemsSource="{Binding Individus0, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nom" Width="auto" DisplayMemberBinding="{Binding Nom_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Prénom" Width="auto" DisplayMemberBinding="{Binding Prenom_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Adresse" Width="auto" DisplayMemberBinding="{Binding Adresse_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Tel" Width="auto" DisplayMemberBinding="{Binding Tel_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Mail" Width="auto" DisplayMemberBinding="{Binding Mail_individu, Mode=TwoWay}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="Liste2" HorizontalAlignment="Left" Height="113" Margin="217,298,0,0" VerticalAlignment="Top" Width="150" ItemsSource="{Binding Individus1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nom" Width="auto" DisplayMemberBinding="{Binding Nom_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Prénom" Width="auto" DisplayMemberBinding="{Binding Prenom_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Fin adhésion" Width="auto" DisplayMemberBinding="{Binding Fin_programme, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Date adhésion" Width="auto" DisplayMemberBinding="{Binding Date_adhesion, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Num programme" Width="auto" DisplayMemberBinding="{Binding Num_programme, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Adresse" Width="auto" DisplayMemberBinding="{Binding Adresse_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Tel" Width="auto" DisplayMemberBinding="{Binding Tel_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Mail" Width="auto" DisplayMemberBinding="{Binding Mail_individu, Mode=TwoWay}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="Liste3" HorizontalAlignment="Left" Height="113" Margin="372,298,0,0" VerticalAlignment="Top" Width="150" ItemsSource="{Binding Individus2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nom" Width="auto" DisplayMemberBinding="{Binding Nom_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Prénom" Width="auto" DisplayMemberBinding="{Binding Prenom_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Fin adhésion" Width="auto" DisplayMemberBinding="{Binding Fin_programme, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Date adhésion" Width="auto" DisplayMemberBinding="{Binding Date_adhesion, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Num programme" Width="auto" DisplayMemberBinding="{Binding Num_programme, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Adresse" Width="auto" DisplayMemberBinding="{Binding Adresse_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Tel" Width="auto" DisplayMemberBinding="{Binding Tel_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Mail" Width="auto" DisplayMemberBinding="{Binding Mail_individu, Mode=TwoWay}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="Liste4" HorizontalAlignment="Left" Height="113" Margin="527,298,0,0" VerticalAlignment="Top" Width="150" ItemsSource="{Binding Individus3, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nom" Width="auto" DisplayMemberBinding="{Binding Nom_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Prénom" Width="auto" DisplayMemberBinding="{Binding Prenom_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Fin adhésion" Width="auto" DisplayMemberBinding="{Binding Fin_programme, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Date adhésion" Width="auto" DisplayMemberBinding="{Binding Date_adhesion, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Num programme" Width="auto" DisplayMemberBinding="{Binding Num_programme, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Adresse" Width="auto" DisplayMemberBinding="{Binding Adresse_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Tel" Width="auto" DisplayMemberBinding="{Binding Tel_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Mail" Width="auto" DisplayMemberBinding="{Binding Mail_individu, Mode=TwoWay}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="Liste5" HorizontalAlignment="Left" Height="113" Margin="682,298,0,0" VerticalAlignment="Top" Width="150" ItemsSource="{Binding Individus4, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nom" Width="auto" DisplayMemberBinding="{Binding Nom_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Prénom" Width="auto" DisplayMemberBinding="{Binding Prenom_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Fin adhésion" Width="auto" DisplayMemberBinding="{Binding Fin_programme, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Date adhésion" Width="auto" DisplayMemberBinding="{Binding Date_adhesion, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Num programme" Width="auto" DisplayMemberBinding="{Binding Num_programme, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Adresse" Width="auto" DisplayMemberBinding="{Binding Adresse_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Tel" Width="auto" DisplayMemberBinding="{Binding Tel_individu, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Mail" Width="auto" DisplayMemberBinding="{Binding Mail_individu, Mode=TwoWay}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Liste des membres par programme" Foreground="SteelBlue" HorizontalAlignment="Left" Height="35" Margin="62,247,0,0" VerticalAlignment="Top" Width="243" FontWeight="Bold" FontSize="14"/>
+        <Label Content="Sans programme :" HorizontalAlignment="Left" Height="26" Margin="62,272,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold" FontStyle="Italic" FontFamily="OCR A Extended"/>
+        <Label Content="Fidélio :" HorizontalAlignment="Left" Height="26" Margin="217,272,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold" FontStyle="Italic" FontFamily="OCR A Extended"/>
+        <Label Content="Fidélio Or :" HorizontalAlignment="Left" Height="26" Margin="372,272,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold" FontStyle="Italic" FontFamily="OCR A Extended"/>
+        <Label Content="Fidélio Platine :" HorizontalAlignment="Left" Height="26" Margin="527,272,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold" FontStyle="Italic" FontFamily="OCR A Extended"/>
+        <Label Content="Fidélio Max :" HorizontalAlignment="Left" Height="26" Margin="682,272,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold" FontStyle="Italic" FontFamily="OCR A Extended"/>
+        <ListView x:Name="Liste6" HorizontalAlignment="Left" Height="113" Margin="62,129,0,0" VerticalAlignment="Top" Width="170" ItemsSource="{Binding Commande_modele, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="N° modèle" Width="auto" DisplayMemberBinding="{Binding Num_modele, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Quantité" Width="auto" DisplayMemberBinding="{Binding Quantite_modele, Mode=TwoWay}"/>
+                    <GridViewColumn Header="N° commande" Width="auto" DisplayMemberBinding="{Binding Num_commande, Mode=TwoWay}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView x:Name="Liste7" HorizontalAlignment="Left" Height="113" Margin="237,129,0,0" VerticalAlignment="Top" Width="170" ItemsSource="{Binding Commande_piece, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="N° pièce" Width="auto" DisplayMemberBinding="{Binding Num_piece, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Quantité" Width="auto" DisplayMemberBinding="{Binding Quantite_piece, Mode=TwoWay}"/>
+                    <GridViewColumn Header="N° commande" Width="auto" DisplayMemberBinding="{Binding Num_commande, Mode=TwoWay}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Modèles :" HorizontalAlignment="Left" Height="26" Margin="62,103,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold" FontStyle="Italic" FontFamily="OCR A Extended"/>
+        <Label Content="Pièces :" HorizontalAlignment="Left" Height="26" Margin="237,103,0,0" VerticalAlignment="Top" Width="130" FontWeight="Bold" FontStyle="Italic" FontFamily="OCR A Extended"/>
+        <Label Content="Quantités vendues" Foreground="SteelBlue" HorizontalAlignment="Left" Height="35" Margin="62,75,0,0" VerticalAlignment="Top" Width="141" FontWeight="Bold" FontSize="14"/>
+        <Label Content="VeloMax" HorizontalAlignment="Left" Height="54" Margin="55,6,0,0" VerticalAlignment="Top" Width="183" FontSize="36" FontFamily="OCR A Extended" BorderBrush="Black" Background="White" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.023"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Image HorizontalAlignment="Left" Height="32" Margin="12,16,0,0" VerticalAlignment="Top" Width="36" Source="roue.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="32" Margin="232,17,0,0" VerticalAlignment="Top" Width="36" Source="roue.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="TB1" Foreground="CornflowerBlue" Text="{Binding Total_quantite}" HorizontalAlignment="Left" Height="22" Margin="559,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" FontWeight="Bold"/>
+        <TextBlock x:Name="TB2" Foreground="CornflowerBlue" Text="{Binding Total_vente}" HorizontalAlignment="Left" Height="24" Margin="501,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" FontWeight="Bold"/>
+        <Label Content="Total quantités vendues :" HorizontalAlignment="Left" Height="35" Margin="412,129,0,0" VerticalAlignment="Top" Width="147" FontWeight="Bold" FontSize="11"/>
+        <Label Content="Total ventes :" HorizontalAlignment="Left" Height="35" Margin="413,172,0,0" VerticalAlignment="Top" Width="86" FontWeight="Bold" FontSize="11"/>
+        <Label Content="€" Foreground="CornflowerBlue" HorizontalAlignment="Left" Height="35" Margin="538,170,0,0" VerticalAlignment="Top" Width="26" FontSize="14"/>
+        <Image HorizontalAlignment="Left" Height="37" Margin="0,55,0,0" VerticalAlignment="Top" Width="883" Source="limite.JPG"/>
+        <Label Content="Nombre total de clients :" HorizontalAlignment="Left" Height="35" Margin="413,207,0,0" VerticalAlignment="Top" Width="146" FontWeight="Bold" FontSize="11"/>
+        <TextBlock x:Name="TB3" Foreground="CornflowerBlue" Text="{Binding Nb_clients}" HorizontalAlignment="Left" Height="24" Margin="564,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" FontWeight="Bold"/>
+        <TextBlock x:Name="TB1_Copy" Foreground="CornflowerBlue" Text="{Binding Moyenne_modele}" HorizontalAlignment="Left" Height="22" Margin="787,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" FontWeight="Bold"/>
+        <Label Content="Moyenne vélos / Commande :" HorizontalAlignment="Left" Height="35" Margin="613,129,0,0" VerticalAlignment="Top" Width="182" FontWeight="Bold" FontSize="11"/>
+        <TextBlock x:Name="TB1_Copy1" Foreground="CornflowerBlue" Text="{Binding Moyenne_piece}" HorizontalAlignment="Left" Height="22" Margin="787,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42" FontWeight="Bold"/>
+        <Label Content="Moyenne pièces / Commande :" HorizontalAlignment="Left" Height="35" Margin="613,169,0,0" VerticalAlignment="Top" Width="182" FontWeight="Bold" FontSize="11"/>
+        <Button Content="Export JSON" HorizontalAlignment="Left" Height="32" Margin="62,456,0,0" VerticalAlignment="Top" Width="112" Click="Export_JSON_Click" Background="#FFADC9EA">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Exporter les clients dont le programme de fidélité &#xD;&#xA;arrive à expiration dans moins de 2 mois :" Foreground="SteelBlue" HorizontalAlignment="Left" Height="40" Margin="62,416,0,0" VerticalAlignment="Top" Width="271" FontWeight="Bold" FontSize="10"/>
+    </Grid>
+</Window>

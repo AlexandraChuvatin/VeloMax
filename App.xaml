@@ -1,0 +1,9 @@
+﻿<Application x:Class="Probleme_BDD_AlexandraCHUVATIN_AntoineCALDICHOURY.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Probleme_BDD_AlexandraCHUVATIN_AntoineCALDICHOURY"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

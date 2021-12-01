@@ -1,0 +1,88 @@
+﻿<Window x:Class="Probleme_BDD_AlexandraCHUVATIN_AntoineCALDICHOURY.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Probleme_BDD_AlexandraCHUVATIN_AntoineCALDICHOURY"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800">
+    <Grid>
+        <Button Content="Gestion Pièce" HorizontalAlignment="Left" Margin="51,115,0,0" VerticalAlignment="Top" Width="145" Click="Gestion_Piece_Click" Height="73" Background="#FFB5E9EB">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Gestion Vélos" HorizontalAlignment="Left" Margin="51,216,0,0" VerticalAlignment="Top" Width="145" Height="73" Click="Gestion_Modele_Click" Background="#FFB5E9EB">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Gestion Fournisseur" HorizontalAlignment="Left" Margin="237,315,0,0" VerticalAlignment="Top" Width="145" Height="73" Click="Gestion_Fournisseur_Click" Background="#FFB5E9EB">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Déconnexion" HorizontalAlignment="Left" Height="36" Margin="642,27,0,0" VerticalAlignment="Top" Width="117" Click="Deconnexion" Background="#FF8FB1D7">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Gestion VeloMax :" HorizontalAlignment="Left" Height="33" Margin="51,77,0,0" VerticalAlignment="Top" Width="173" FontWeight="Bold" FontSize="16"/>
+        <Label Content="VeloMax" HorizontalAlignment="Left" Height="54" Margin="292,7,0,0" VerticalAlignment="Top" Width="183" FontSize="36" FontFamily="OCR A Extended" BorderBrush="Black" Background="White" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.023"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button Content="Gestion Particuliers" HorizontalAlignment="Left" Margin="237,115,0,0" VerticalAlignment="Top" Width="145" Click="Gestion_Particulier_Click" Height="73" Background="#FFB5E9EB">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Gestion Entreprises" HorizontalAlignment="Left" Margin="237,216,0,0" VerticalAlignment="Top" Width="145" Click="Gestion_Entreprise_Click" Height="73" Background="#FFB5E9EB">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Gestion Commandes" HorizontalAlignment="Left" Margin="422,115,0,0" VerticalAlignment="Top" Width="145" Click="Gestion_Commandes_Click" Height="73" Background="#FFB5E9EB">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button Content="Gestion Stock" HorizontalAlignment="Left" Margin="422,216,0,0" VerticalAlignment="Top" Width="145" Click="Gestion_Stock_Click" Height="73" Background="#FFB5E9EB">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="659,291,0,0" VerticalAlignment="Top" Width="120" Click="Statistiques_Click" Height="120" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="statistics.jpg"/>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="32" Margin="249,17,0,0" VerticalAlignment="Top" Width="36" Source="roue.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="32" Margin="469,18,0,0" VerticalAlignment="Top" Width="36" Source="roue.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="Statistiques :" HorizontalAlignment="Left" Height="33" Margin="663,253,0,0" VerticalAlignment="Top" Width="109" FontWeight="Bold" FontSize="16"/>
+    </Grid>
+</Window>
