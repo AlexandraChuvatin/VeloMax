@@ -1,5 +1,8 @@
-# VeloMax
-Projet sur la gestion d'un magasin de vélo.
+# VeloMax - Logiciel de gestion d'un magasin de vélo
+
+## Introduction
+
+Projet sur la gestion d'un magasin de vélo réalisé dans le cadre de mon master 1 "Data & IA" en école d'ingénieur.
 
 Réalisé sur C# et MySQL
 
